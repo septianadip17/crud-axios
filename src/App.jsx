@@ -5,6 +5,7 @@ import Home from "./Home";
 import Create from "./Create";
 import Update from "./Update";
 import Read from "./Read";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   return (
