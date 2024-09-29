@@ -11,6 +11,7 @@ const Home = () => {
       .catch((err) => console.log(err));
   }, []);
 
+  
   return (
     <div className="d-flex flex-column justify-content-center align-items-center bg-light vh-100">
       <h1>List of Users</h1>
