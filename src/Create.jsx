@@ -16,7 +16,7 @@ const Create = () => {
       .post("http://localhost:3000/users", values)
       .then((res) => {
         console.log(res);
-        navigate('/')
+        navigate("/");
       })
       .catch((err) => console.log(err));
   };
@@ -33,7 +33,7 @@ const Create = () => {
               name="name"
               className="form-control"
               placeholder="Enter Name"
-              onChange={(e) => setValues({ ...values, name: e.target.value })}
+              onChange={e => setValues({ ...values, name: e.target.value })}
             />
           </div>
           <div className="mb-2">
@@ -43,7 +43,7 @@ const Create = () => {
               name="email"
               className="form-control"
               placeholder="Enter Email"
-              onChange={(e) => setValues({ ...values, email: e.target.value })}
+              onChange={e => setValues({ ...values, email: e.target.value })}
             />
           </div>
           <div className="mb2">
@@ -53,10 +53,14 @@ const Create = () => {
               name="phone"
               className="form-control"
               placeholder="Enter Phone"
-              onChange={(e) => setValues({ ...values, phone: e.target.value })}
+              onChange={e => setValues({ ...values, phone: e.target.value })}
             />
-            <button className="btn btn-success">Submit</button>
-            <Link to="/">Back</Link>
+            <div className="d-flex gap-2 mt-3">
+              <button className="btn btn-success">Submit</button>
+              <Link to="/" className="btn btn-primary">
+                Back
+              </Link>
+            </div>
           </div>
         </form>
       </div>
