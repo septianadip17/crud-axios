@@ -16,7 +16,7 @@ const Home = () => {
     <div className="d-flex flex-column justify-content-center align-items-center bg-light vh-100">
       <h1>List of Users</h1>
       <div className="w-75 rounded bg-white border shadow p-4">
-        <table>
+        <table className="table table-striped">
           <thead>
             <tr>
               <th>ID</th>
@@ -34,8 +34,9 @@ const Home = () => {
                 <td>{d.email}</td>
                 <td>{d.phone}</td>
                 <td>
-                  <button className="btn btn-sm btn-primary">edit</button>
-                  <button className="btn btn-sm btn-danger">delete</button>
+                  <button className="btn btn-sm btn-info me-2">Read</button>
+                  <button className="btn btn-sm btn-primary me-2">Edit</button>
+                  <button className="btn btn-sm btn-danger">Delete</button>
                 </td>
               </tr>
             ))}
